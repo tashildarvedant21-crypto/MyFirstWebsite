@@ -1,0 +1,140 @@
+/* Import custom Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    color: #333;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, #4c8880, #2a9898);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+/* ===== Navigation (Flexbox) ===== */
+nav {
+    background: #04554c;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #64b5f6;
+    color: #0d47a1;
+}
+
+/* ===== Main Layout (CSS Grid) ===== */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+/* ===== Sections ===== */
+section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== Images ===== */
+img {
+    max-width: 200px;
+    border-radius: 15px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* ===== Lists ===== */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* ===== Form Styling ===== */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1e88e5;
+}
+
+/* ===== Button Hover Effect ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #dd2476, #ff512f);
+    transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+    background:  #4c8880;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
