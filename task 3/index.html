@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vedant Tashildar | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Vedant Tashildar</h1>
+        <p>Student | Web Developer | Tech Enthusiast</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+
+        <!-- Dark / Light Mode Toggle -->
+        <button id="themeToggle">Dark Mode </button>
+    </nav>
+
+    <!-- Toggle About Section Button -->
+    <div style="text-align:center; margin:20px;">
+        <button id="toggleAbout">Hide About</button>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="C:\Users\Atharva\OneDrive\Desktop\Developers Arena\image 1.jpg" alt="Profile photo of Vedant Tashildar">
+            <p>
+                Hello! I am Vedant Tashildar, a passionate student and aspiring web developer.
+                I enjoy creating user-friendly websites and learning new technologies.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (Basics)</li>
+                <li>Java Programming</li>
+                <li>Linux & Shell Scripting</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <!-- Image Slider Section -->
+        <section>
+            <h2>Image Slider</h2>
+            <img id="sliderImage" src="C:\Users\Atharva\OneDrive\Desktop\Developers Arena\image 2.jpg" alt="Slider Image">
+            <img id="sliderImage" src="C:\Users\Atharva\OneDrive\Desktop\Developers Arena\image 3.jpg" alt="slider Image">
+                        <div style="text-align:center;">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+            </div>
+        </section>
+
+        <!-- To-Do List Section -->
+        <section>
+            <h2>My To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button id="addTask">Add Task</button>
+            <ul id="taskList"></ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="mailto:jamesBond007@gmail.com" method="post" enctype="text/plain">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Vedant Tashildar. All rights reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
