@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact & Booking | Saffron Courtyard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Contact & Reservations</h1>
+  <p class="slogan">We’re Here to Serve You Better</p>
+</header>
+
+<section class="contact-box">
+
+  <h2>Get in Touch</h2>
+  <p class="contact-intro">
+    Whether you’re planning a cozy dinner, a birthday celebration, or a corporate
+    gathering, our team is always happy to assist you.
+  </p>
+
+  <div class="contact-details">
+
+    <div class="contact-card">
+      <h3>👤 Owner</h3>
+      <p>Mr. Vedant Tashildar</p>
+      <p>📞 +91 98765 43210</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>🧑‍💼 Restaurant Manager</h3>
+      <p>Ms. Neha Sharma</p>
+      <p>📞 +91 91234 56789</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>☎ Reception Desk</h3>
+      <p>📞 +91 99887 77665</p>
+      <p>🕘 10:00 AM – 11:30 PM</p>
+    </div>
+
+  </div>
+
+  <h2>Reserve Your Table</h2>
+  <p class="booking-note">
+    Book your table in advance and enjoy a smooth dining experience with us.
+  </p>
+
+  <form class="booking-form" onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Your Full Name" required>
+    <input type="number" id="people" placeholder="Number of Guests" required>
+
+    <select id="event">
+      <option>Regular Dining</option>
+      <option>Birthday Celebration</option>
+      <option>Corporate Event</option>
+      <option>Anniversary</option>
+    </select>
+
+    <textarea placeholder="Any special requests? (Decoration, Cake, Music, etc.)"></textarea>
+
+    <button type="submit">Confirm Reservation</button>
+  </form>
+
+  <div class="extra-services">
+    <h3>🎉 Celebrations & Events</h3>
+    <p>
+      Planning a birthday party or special occasion? We offer:
+    </p>
+    <ul>
+      <li>Spacious Party Hall (Up to 100 Guests)</li>
+      <li>Custom Decoration & Lighting</li>
+      <li>In-house Catering & Dessert Counter</li>
+      <li>Dedicated Event Coordinator</li>
+    </ul>
+  </div>
+
+</section>
+
+<footer>
+  <p>📍 Pune, Maharashtra | ☎ +91 99887 77665</p>
+  <p>© 2026 Saffron Courtyard | Fine Dining Restaurant</p>
+</footer>
+
+</body>
+</html>
